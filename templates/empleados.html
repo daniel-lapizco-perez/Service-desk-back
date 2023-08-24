@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+
+{%block content%}
+    <h1>{%block title%} Empleados {%endblock%}</h1>
+
+    {% for empleado in empleados %}
+        <div class="empleado">
+            <h3>#{{empleado[0]}}</h3>
+        </div>
+    {%endfor%}
+{%endblock%}
